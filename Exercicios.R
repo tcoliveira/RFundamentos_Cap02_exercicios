@@ -55,7 +55,7 @@ iris
 
 ?slice()
 
-slice(iris_copy, 136:n())
+slice(iris_copy, 1:15)
 
 # Exercícios 10 - Use a função filter no seu novo dataframe criado no item anterior e retorne
 ## apenas valores em que Sepal.Length > 6
