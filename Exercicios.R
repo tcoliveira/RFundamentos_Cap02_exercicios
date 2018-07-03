@@ -46,13 +46,23 @@ sepal_length
 #slice(), divida o dataframe em um subset de 15 linhas
 # Dica 1: você vai ter que instalar e carregar o pacote dplyr
 # Dica 2: consulte o help para aprender como usar a função slice()
+library(dplyr)
+install.packages(dplyr)
 
+iris_copy <- cbind(iris)
+iris_copy
+iris
 
+?slice()
+
+slice(iris_copy, 136:n())
 
 # Exercícios 10 - Use a função filter no seu novo dataframe criado no item anterior e retorne
 ## apenas valores em que Sepal.Length > 6
 # Dica: use o RSiteSearch() para aprender como usar a função filter
+library(dplyr)
 
+filter(iris_copy,Sepal.Length > 6 )
 
 
 
